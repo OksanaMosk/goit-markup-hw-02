@@ -2,6 +2,18 @@
 .list {
   list-style: none;
 }
+
 a {
   text-decoration: none;
+}
+
+.logo {
+Font family: Raleway
+Font size: 18px
+Line height: 21px
+color: #2E2F42
+}
+
+.logoweb {
+  color: #4d5ae5;
 }
