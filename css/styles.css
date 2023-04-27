@@ -1,11 +1,27 @@
+:root {
+  --main-color: #2e2f42;
+  --secondary-color: #ffffff;
+  --accent-color: #404bbf;
+  --paragraph-contacts-color: #434455;
+  --button-logo-color: #4d5ae5;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: var(--main-color);
 }
 
 ol,
 ul {
   list-style: none;
+}
+button: {
+  cursor: pointer;
+}
+
+.hero,
+footer {
+  background-color: var(--main-color);
 }
 
 .link {
@@ -13,6 +29,7 @@ ul {
 }
 
 .logo {
+  color: var(--button-logo-color);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 1.17;
@@ -21,16 +38,25 @@ ul {
   text-transform: uppercase;
 }
 
-.web {
-  color: #4d5ae5;
+.logo-dark {
+  color: var(--main-color);
+}
+
+.logo-light {
+  color: #f4f4fd;
 }
 
 .menu-item {
-  color: #2e2f42;
+  color: var(--main-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--accent-color);
 }
 
 .contact {
@@ -39,26 +65,80 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--paragraph-contacts-color);
 }
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+.modal-open-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color);
+  background-color: var(--button-logo-color);
+  cursor: pointer;
+}
+
+.modal-open-btn:hover,
+.modal-open-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+
 h1 {
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-
-  /* color: #FFFFFF; */
 }
-.about {
+.about,
+.services {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--paragraph-contacts-color);
 }
-h2 {
+h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.footer {
+  color: #f4f4fd;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.modal-open {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--button-logo-color);
+  background-color: #f4f4fd;
+  cursor: pointer;
+}
+
+.modal-open:hover,
+.modal-open:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
