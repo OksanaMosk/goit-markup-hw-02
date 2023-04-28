@@ -99,6 +99,10 @@ body {
   background-color: var(--press-color);
 }
 
+.modal-open-btn {
+  cursor: pointer;
+}
+
 /* section-mainpage-2*/
 
 .scills-title {
