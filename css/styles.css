@@ -20,10 +20,6 @@ body {
   text-decoration: none;
 }
 
-button: {
-  cursor: pointer;
-}
-
 .hero,
 .footer {
   background-color: var(--main-color);
