@@ -135,6 +135,10 @@ button: {
   background-color: #f4f4fd;
 }
 
+.team-list {
+  color: #ffffff;
+}
+
 .team-item {
   font-weight: 500;
   font-size: 20px;
